@@ -63,10 +63,18 @@ watch(
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
 
-      ctx.font = '600 28pt "Anek Tamil"'
-      ctx.fillStyle = '#f7f1e3'
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+      gradient.addColorStop(0.6, '#e056fd');
+      gradient.addColorStop(0.2, '#e056fd');
+      gradient.addColorStop(1, '#e056fd');
+      ctx.fillStyle = gradient;
+      ctx.shadowColor = '#e056fd';
+      ctx.shadowBlur = 4;
+
+      ctx.font = '600 32pt "Anek Tamil"'
+      ctx.fillStyle = '#f6e58d'
       ctx.textAlign = 'center'
-      ctx.fillText(props.text, 516, 980)
+      ctx.fillText(props.text, 516, 995)
     }
   },
   { immediate: true }
