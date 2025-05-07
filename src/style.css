@@ -1,0 +1,48 @@
+@import 'bulma/css/bulma.min.css';
+
+html, body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: "Anek Tamil", sans-serif;
+}
+body {
+  background: #6D214F;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 600;
+}
+.title {
+  font-family: "Anek Tamil", sans-serif;
+}
+p {
+  font-family: "Anek Tamil", sans-serif;
+}
+button {
+  font-family: "Anek Tamil", sans-serif;
+}
+.button {
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 600;
+}
+input {
+  font-family: "Anek Tamil", sans-serif;
+}
+.input {
+  font-family: "Anek Tamil", sans-serif;
+}
+body.dark-mode {
+  background-color: #f1b7e3;
+  color: #f0f0f0;
+}
+
+body.dark-mode .box {
+  background-color: #fde1f7 !important;
+  border-color: #ff79c6;
+  color: #f0f0f0;
+}
